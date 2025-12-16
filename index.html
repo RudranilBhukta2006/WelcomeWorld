@@ -209,5 +209,60 @@
   <p>© 2025 KeVinXOR | Gaming Website</p>
 </footer>
 
+  
+<script>
+  // Smooth reveal on scroll
+  const revealElements = document.querySelectorAll('section, .card');
+
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    revealElements.forEach(el => {
+      const boxTop = el.getBoundingClientRect().top;
+      if (boxTop < triggerBottom) {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }
+    });
+  };
+
+  revealElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(60px)';
+    el.style.transition = '0.8s ease';
+  });
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+
+  // Neon mouse glow effect
+  const glow = document.createElement('div');
+  glow.style.position = 'fixed';
+  glow.style.width = '120px';
+  glow.style.height = '120px';
+  glow.style.borderRadius = '50%';
+  glow.style.pointerEvents = 'none';
+  glow.style.background = 'radial-gradient(circle, rgba(0,255,225,0.35), transparent 60%)';
+  glow.style.zIndex = '9999';
+  document.body.appendChild(glow);
+
+  document.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX - 60 + 'px';
+    glow.style.top = e.clientY - 60 + 'px';
+  });
+
+  // Button pulse animation
+  const buttons = document.querySelectorAll('.btn');
+  setInterval(() => {
+    buttons.forEach(btn => {
+      btn.animate([
+        { boxShadow: '0 0 10px #00ffe1' },
+        { boxShadow: '0 0 35px #00ffe1' },
+        { boxShadow: '0 0 10px #00ffe1' }
+      ], { duration: 1200 });
+    });
+  }, 2000);
+</script>
+
 </body>
 </html>
