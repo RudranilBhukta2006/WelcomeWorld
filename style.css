@@ -1,11 +1,79 @@
-body {
-  background-color: #0f172a;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 100px;
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Poppins,sans-serif;
+background:#000;
+color:#fff;
 }
 
-h1 {
-  color: #38bdf8;
+
+header{
+position:fixed;top:0;width:100%;
+padding:15px 50px;
+display:flex;justify-content:space-between;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+z-index:1000;
 }
+
+
+header h1{
+font-family:Orbitron,sans-serif;
+color:#00ffe1;
+}
+
+
+nav a{color:#fff;margin-left:25px;text-decoration:none}
+
+
+.hero{
+height:100vh;
+display:flex;align-items:center;justify-content:center;
+background:linear-gradient(to bottom,#000,#020c1b);
+}
+
+
+.hero h2{
+font-family:Orbitron;
+font-size:3.2rem;
+color:#00ffe1;
+}
+
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 35px;
+border:2px solid #00ffe1;
+border-radius:30px;
+color:#00ffe1;
+text-decoration:none;
+}
+
+
+.btn:hover{background:#00ffe1;color:#000}
+
+
+section{padding:120px 60px}
+.section-title{text-align:center;font-family:Orbitron;margin-bottom:40px}
+
+
+.games{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+
+.card{
+background:#0a0a0a;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+
+.card:hover{transform:translateY(-15px);box-shadow:0 0 30px #00ffe1}
+
+
+footer{text-align:center;padding:40px;background:#000}
