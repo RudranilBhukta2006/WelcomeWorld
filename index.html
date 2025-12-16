@@ -1,268 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KeVinXOR | Gaming Zone</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KeVinXOR | Gaming Zone</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #0f2027, #000);
-      color: #fff;
-      overflow-x: hidden;
-    }
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    /* Navbar */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 15px 60px;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
 
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      color: #00ffe1;
-      letter-spacing: 2px;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 25px;
-      text-decoration: none;
-      position: relative;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: #00ffe1;
-      transition: 0.3s;
-    }
-
-    nav a:hover::after { width: 100%; }
-
-    /* Hero Section */
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e') center/cover no-repeat;
-      position: relative;
-    }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      animation: fadeUp 1.5s ease;
-    }
-
-    .hero h2 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3.5rem;
-      color: #00ffe1;
-      text-shadow: 0 0 20px #00ffe1;
-    }
-
-    .hero p {
-      margin: 20px 0;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 40px;
-      border: 2px solid #00ffe1;
-      color: #00ffe1;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: 0.4s;
-      box-shadow: 0 0 20px transparent;
-    }
-
-    .btn:hover {
-      background: #00ffe1;
-      color: #000;
-      box-shadow: 0 0 30px #00ffe1;
-    }
-
-    /* Games Section */
-    section {
-      padding: 120px 60px;
-    }
-
-    .games {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: linear-gradient(145deg, #0a0a0a, #111);
-      border-radius: 20px;
-      padding: 30px;
-      transition: 0.4s;
-      box-shadow: 0 0 20px rgba(0,255,225,0.1);
-    }
-
-    .card:hover {
-      transform: translateY(-15px) scale(1.03);
-      box-shadow: 0 0 40px rgba(0,255,225,0.4);
-    }
-
-    .card i {
-      font-size: 40px;
-      color: #00ffe1;
-      margin-bottom: 15px;
-    }
-
-    /* Footer */
-    footer {
-      background: #000;
-      padding: 40px;
-      text-align: center;
-      opacity: 0.8;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+
 <header>
-  <h1>KeVinXOR</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#games">Games</a>
-    <a href="#download">Download</a>
-  </nav>
+<h1>KeVinXOR</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#games">Games</a>
+<a href="#download">Download</a>
+</nav>
 </header>
 
+
 <section class="hero" id="home">
-  <div class="hero-content">
-    <h2>LEVEL UP YOUR GAME</h2>
-    <p>Next-gen gaming website with neon animations</p>
-    <a href="#download" class="btn">Download Game</a>
-  </div>
+<div class="hero-content">
+<h2>LEVEL UP YOUR GAME</h2>
+<p>Next‑gen gaming experience</p>
+<a href="#download" class="btn">Download Game</a>
+</div>
 </section>
+
 
 <section id="games">
-  <h2 style="text-align:center;font-family:Orbitron;margin-bottom:40px">🔥 Our Games</h2>
-  <div class="games">
-    <div class="card">
-      <i class="fas fa-gamepad"></i>
-      <h3>Action Shooter</h3>
-      <p>Fast-paced FPS with stunning effects.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-dragon"></i>
-      <h3>Fantasy RPG</h3>
-      <p>Open world RPG with epic battles.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-car"></i>
-      <h3>Racing X</h3>
-      <p>Ultra-realistic speed racing game.</p>
-    </div>
-  </div>
+<h2 class="section-title">🔥 Our Games</h2>
+<div class="games">
+<div class="card"><i class="fas fa-gamepad"></i><h3>Action Shooter</h3></div>
+<div class="card"><i class="fas fa-dragon"></i><h3>Fantasy RPG</h3></div>
+<div class="card"><i class="fas fa-car"></i><h3>Racing X</h3></div>
+</div>
 </section>
 
-<section id="download" style="text-align:center">
-  <h2 style="font-family:Orbitron">⬇ Download Now</h2>
-  <p style="margin:20px 0">Available for PC & Mobile</p>
-  <a href="#" class="btn">Download</a>
+
+<section id="download" class="center">
+<h2>⬇ Download Now</h2>
+<a href="#" class="btn">Download</a>
 </section>
+
 
 <footer>
-  <p>© 2025 KeVinXOR | Gaming Website</p>
+<p>© 2025 KeVinXOR Gaming</p>
 </footer>
 
-  
-<script>
-  // Smooth reveal on scroll
-  const revealElements = document.querySelectorAll('section, .card');
 
-  const revealOnScroll = () => {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    revealElements.forEach(el => {
-      const boxTop = el.getBoundingClientRect().top;
-      if (boxTop < triggerBottom) {
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      }
-    });
-  };
-
-  revealElements.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(60px)';
-    el.style.transition = '0.8s ease';
-  });
-
-  window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll();
-
-  // Neon mouse glow effect
-  const glow = document.createElement('div');
-  glow.style.position = 'fixed';
-  glow.style.width = '120px';
-  glow.style.height = '120px';
-  glow.style.borderRadius = '50%';
-  glow.style.pointerEvents = 'none';
-  glow.style.background = 'radial-gradient(circle, rgba(0,255,225,0.35), transparent 60%)';
-  glow.style.zIndex = '9999';
-  document.body.appendChild(glow);
-
-  document.addEventListener('mousemove', e => {
-    glow.style.left = e.clientX - 60 + 'px';
-    glow.style.top = e.clientY - 60 + 'px';
-  });
-
-  // Button pulse animation
-  const buttons = document.querySelectorAll('.btn');
-  setInterval(() => {
-    buttons.forEach(btn => {
-      btn.animate([
-        { boxShadow: '0 0 10px #00ffe1' },
-        { boxShadow: '0 0 35px #00ffe1' },
-        { boxShadow: '0 0 10px #00ffe1' }
-      ], { duration: 1200 });
-    });
-  }, 2000);
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
