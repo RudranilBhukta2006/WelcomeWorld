@@ -1,13 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TITAN FF | Game Download</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #00ffe1;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .card h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffe1;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: linear-gradient(135deg, #00ffe1, #00b3ff);
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 255, 225, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Hello World 🌍</h1>
-  <p>This is my GitHub Pages website.</p>
+  <header>
+    <h1>TITAN FF</h1>
+    <p>Download my awesome games & enjoy next-level gaming</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>🔥 TITAN Adventure</h2>
+      <p>Action-packed adventure game with smooth controls and exciting levels.</p>
+      <a href="your-game-link-here.apk" class="download-btn">Download Game</a>
+    </div>
+
+    <div class="card">
+      <h2>⚔️ TITAN Battle</h2>
+      <p>Multiplayer battle game with stunning graphics and intense gameplay.</p>
+      <a href="your-game-link-here.apk" class="download-btn">Download Game</a>
+    </div>
+
+    <div class="card">
+      <h2>🚀 TITAN Space Run</h2>
+      <p>Fast-paced space runner game. Dodge obstacles and score high!</p>
+      <a href="your-game-link-here.apk" class="download-btn">Download Game</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 TITAN FF | All Rights Reserved
+  </footer>
 
 </body>
 </html>
